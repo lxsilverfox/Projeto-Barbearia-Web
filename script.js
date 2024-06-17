@@ -86,17 +86,18 @@ criaPedido('lucas', 1, 1)
 
 
 
-function atualizaPedido(lista, id, tipo, valor) {
+function atualizarServico(lista, id, tipo, valor) {
     for (let i = 0; i < lista.length; i++) {
         if (lista[i].id == id) {
             lista[i].tipo = tipo;
             lista[i].valor = valor;
             break;
+            
         }
-    }
-    return lista;
+    }return lista;
+    
 }
-atualizaPedido(retornaTodasBarbas(), 5, "Atualizado", 20)
+atualizarServico(retornaTodasBarbas(), 5, "Atualizado", 20)
 
 
 
